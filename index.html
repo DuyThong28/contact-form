@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>contact us</h1>
+      <form action="/" method="GET">
+        <section class="contact-detail">
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="name">Your Name</label>
+              <input type="text" name="name" id="name" required />
+            </li>
+            <li>
+              <label for="email">Your Email Address</label>
+              <input type="email" name="email" id="email" required />
+            </li>
+            <li>
+              <label for="phone">Your Phone Number</label>
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                required
+                minlength="10"
+                maxlength="10"
+              />
+            </li>
+            <li>
+              <label for="message">Your Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="enter your message"
+              ></textarea>
+            </li>
+            <li>
+              <label for="find">How did you find us?</label>
+              <select name="find" id="find">
+                <option value="web">Web Search</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone Call</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section class="reply">
+          <h2>How should we reply?</h2>
+          <ul>
+            <li>
+              <label for="call">Call me</label>
+              <input type="radio" name="call" id="call" required />
+            </li>
+            <li>
+              <label for="email">Send me an email</label>
+              <input type="radio" name="call" id="email" required />
+            </li>
+            <li>
+              <label for="no">Don't reply</label>
+              <input type="radio" name="call" id="no" required />
+            </li>
+            <li>
+              <label for="term">Accept Terms</label>
+              <input type="checkbox" name="term" id="term" required />
+            </li>
+          </ul>
+        </section>
+        <section class="btn">
+          <ul>
+            <li>
+              <button class="clear-btn" type="reset">Clear</button>
+            </li>
+            <li>
+              <button class="submit-btn" type="submit">Submit</button>
+            </li>
+            <li></li>
+          </ul>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
